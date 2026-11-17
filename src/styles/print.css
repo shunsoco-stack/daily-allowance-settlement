@@ -1,0 +1,52 @@
+/* 印刷用精算書 */
+@media print {
+  @page {
+    size: A4;
+    margin: 14mm;
+  }
+  body {
+    background: #fff;
+    color: #000;
+    font-size: 10px;
+  }
+  .no-print,
+  footer,
+  .page-heading .actions {
+    display: none !important;
+  }
+  .main-shell {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+  main {
+    padding: 0;
+    max-width: none;
+  }
+  .panel {
+    border: 1px solid #ccc;
+    padding: 14px;
+    margin-bottom: 15px;
+    break-inside: avoid;
+  }
+  .entry-row {
+    break-inside: avoid;
+  }
+  .panel:has(.entry-table) {
+    break-inside: auto;
+  }
+  .entry-row > div span {
+    white-space: normal;
+    overflow: visible;
+  }
+  .dashboard-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .table-head,
+  .entry-row {
+    grid-template-columns: minmax(0, 1fr) 80px 75px 50px;
+  }
+  .print-note {
+    color: #000;
+  }
+}

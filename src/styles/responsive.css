@@ -1,0 +1,253 @@
+/* タブレット・スマートフォン */
+@media (max-width: 1200px) {
+  .sidebar {
+    width: 210px;
+    padding-inline: 17px;
+  }
+  .main-shell {
+    margin-left: 210px;
+    width: calc(100% - 210px);
+  }
+  main {
+    padding: 28px 24px;
+  }
+  .stats-grid {
+    gap: 14px;
+  }
+  .total-card,
+  .stat-card {
+    padding: 20px;
+  }
+  .total-card > strong {
+    font-size: 31px;
+  }
+  .stat-card > strong {
+    font-size: 26px;
+  }
+  .table-head,
+  .entry-row {
+    grid-template-columns: minmax(0, 1fr) 95px 80px 58px;
+    gap: 10px;
+  }
+  .entry-row > div {
+    gap: 10px;
+  }
+  .dashboard-grid {
+    grid-template-columns: 1.5fr 1fr;
+  }
+}
+@media (max-width: 950px) {
+  .sidebar {
+    width: 180px;
+  }
+  .brand {
+    font-size: 16px;
+  }
+  .workspace {
+    font-size: 9px;
+  }
+  .workspace small {
+    font-size: 8px;
+  }
+  .main-shell {
+    margin-left: 180px;
+    width: calc(100% - 180px);
+  }
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .total-card {
+    grid-column: 1 / -1;
+    min-height: 180px;
+  }
+  .dashboard-grid,
+  .editor-grid {
+    grid-template-columns: 1fr;
+  }
+  .rules-cards,
+  .sites-grid {
+    grid-template-columns: 1fr;
+  }
+  .page-heading {
+    align-items: start;
+    flex-direction: column;
+  }
+  .period-caption {
+    flex-direction: column;
+  }
+}
+@media (max-width: 650px) {
+  body {
+    font-size: 13px;
+  }
+  .sidebar {
+    position: fixed;
+    inset: auto 0 0;
+    width: 100%;
+    padding: 4px 6px max(4px, env(safe-area-inset-bottom));
+    border: 0;
+    border-top: 1px solid var(--line);
+  }
+  .sidebar .brand,
+  .workspace,
+  .nav-label,
+  .sidebar-bottom {
+    display: none;
+  }
+  nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+  }
+  nav a {
+    flex-direction: column;
+    gap: 0;
+    padding: 4px 0;
+    font-size: 10px;
+    min-height: 54px;
+  }
+  nav a > span {
+    font-size: 20px;
+  }
+  .main-shell {
+    width: 100%;
+    margin-left: 0;
+    padding-bottom: 76px;
+  }
+  .topbar {
+    height: 56px;
+    padding: 0 18px;
+    font-size: 10px;
+  }
+  .demo-badge {
+    font-size: 8px;
+  }
+  main {
+    padding: 25px 16px;
+  }
+  h1 {
+    font-size: 23px;
+  }
+  .page-heading {
+    gap: 18px;
+    margin-bottom: 24px;
+  }
+  .page-heading .actions {
+    width: 100%;
+  }
+  .page-heading .primary {
+    width: 100%;
+  }
+  .period-caption {
+    font-size: 11px;
+  }
+  .period-caption .badge {
+    margin-left: 5px;
+  }
+  .stats-grid {
+    gap: 12px;
+  }
+  .stat-card {
+    padding: 16px 13px;
+    min-height: 170px;
+  }
+  .stat-card > strong {
+    font-size: 24px;
+  }
+  .stat-card > span {
+    font-size: 11px;
+  }
+  .stat-card p {
+    font-size: 9px;
+  }
+  .total-card {
+    padding: 22px;
+  }
+  .total-card > strong {
+    font-size: 37px;
+  }
+  .panel {
+    padding: 20px 16px;
+    margin-bottom: 18px;
+  }
+  .category-grid {
+    gap: 19px 10px;
+  }
+  .category-item strong {
+    font-size: 17px;
+  }
+  .section-heading {
+    gap: 8px;
+  }
+  .section-heading h2 {
+    font-size: 14px;
+  }
+  .section-heading .text-link {
+    font-size: 10px;
+    flex-shrink: 0;
+  }
+  .table-head {
+    display: none;
+  }
+  .entry-row {
+    grid-template-columns: minmax(0, 1fr) 90px;
+    padding: 15px 0;
+  }
+  .entry-row > div {
+    flex-direction: column;
+    gap: 2px;
+    align-items: start;
+  }
+  .entry-row > div span {
+    max-width: 100%;
+    font-size: 10px;
+  }
+  .entry-row > b {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .entry-row .badge {
+    justify-self: end;
+  }
+  .entry-time {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .entry-time small {
+    display: inline;
+    margin-left: 7px;
+  }
+  .filters {
+    gap: 12px;
+  }
+  .filters .field {
+    min-width: 130px;
+  }
+  .filters .field:last-of-type {
+    flex-basis: 100%;
+  }
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .editable-row {
+    grid-template-columns: 1fr 1fr;
+  }
+  .editable-row button {
+    grid-column: 1 / -1;
+    justify-self: end;
+  }
+  .summary-amount {
+    font-size: 23px;
+  }
+  .summary-amount,
+  .list-row span,
+  .section-heading h2 {
+    overflow-wrap: anywhere;
+  }
+  .summary-amount {
+    white-space: nowrap;
+  }
+  .info-strip {
+    font-size: 10px;
+  }
+}

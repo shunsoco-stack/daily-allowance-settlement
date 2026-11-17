@@ -1,0 +1,142 @@
+/* 基本設定 */
+:root {
+  --ink: #233b35;
+  --muted: #7b8781;
+  --green: #176b55;
+  --line: #e5eae6;
+  --chart-0: #287c64;
+  --chart-1: #80ae99;
+  --chart-2: #b5cbbb;
+  --chart-3: #d6b971;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #f5f7f4;
+  color: var(--ink);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP",
+    "Noto Sans CJK JP", "Yu Gothic UI", "Yu Gothic", Meiryo, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button,
+.button {
+  min-height: 44px;
+  padding: 10px 17px;
+  background: white;
+  border: 1px solid #dce4de;
+  border-radius: 7px;
+  color: var(--ink);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 13px;
+}
+button:hover,
+.button:hover {
+  border-color: var(--green);
+  background: #eef5ef;
+}
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.primary {
+  color: white;
+  background: var(--green);
+  border-color: var(--green);
+}
+.primary:hover {
+  color: white;
+  background: #115641;
+}
+.danger {
+  color: #b04940;
+}
+input,
+select,
+textarea {
+  min-width: 0;
+  width: 100%;
+  min-height: 44px;
+  padding: 9px 12px;
+  border: 1px solid #d8e0da;
+  border-radius: 6px;
+  background: #fff;
+  color: var(--ink);
+}
+textarea {
+  min-height: 92px;
+  resize: vertical;
+}
+:focus-visible {
+  outline: 3px solid #82bca5;
+  outline-offset: 3px;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+h1 {
+  font-size: 27px;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  line-height: 1.5;
+}
+h2 {
+  font-size: 16px;
+  font-weight: 700;
+}
+h3 {
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+small {
+  font-size: 11px;
+}
+.muted {
+  color: var(--muted);
+  font-size: 12px;
+}
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  color: var(--green);
+  margin-bottom: 8px;
+}
+.badge {
+  display: inline-block;
+  padding: 3px 9px;
+  color: #657d6f;
+  background: #eef3ed;
+  border-radius: 4px;
+  font-size: 10px;
+  white-space: nowrap;
+}
+.text-link {
+  color: var(--green);
+  font-size: 12px;
+  font-weight: 600;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
